@@ -35,9 +35,13 @@ Out many algorithms that are available in Azure Machine Learning Studio, our Lin
 
 Unfortunately, many models we tried on Neural Nets did not converge to the solution which might be an indicator that we need more data.
 
-Below, is the test result of 3 months, overall, we were able to capture trends but we overshoot the trends from time to time. The change(Y Axis) is the predicted percentage increase or decrease on defense industry(stocks) and the X xis is time represented in days.
+Below, is the test result of 3 months, overall, we were able to capture trends but we overshoot the trends from time to time. The change(Y Axis) is the **predicted percentage increase or decrease on defense industry(stocks)** and the X xis is time represented in days.
 
 ![currency](https://raw.githubusercontent.com/utkuozbulak/UCL-DSSC-Hackaton/master/PowerBI_Image_Exports/7-defence-index-trend-prediction.png "currency")
+
+The best results of individual ML algorithms are below:
+
+![model](https://raw.githubusercontent.com/utkuozbulak/UCL-DSSC-Hackaton/master/PowerBI_Image_Exports/model-results.png "model")
 
 The model we used in Azure Studio is like below:
 
