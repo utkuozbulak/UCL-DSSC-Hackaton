@@ -2,11 +2,11 @@
 
 ## Team: Hype Train
 ## Members:
-Alex Young
+Alex Young - <a href="http://www.github.com/alexdy2007">alexdy2007</a>
 
-Lukas Weiss
+Lukas Weiss - <a href="http://www.github.com/blanche">blanche</a>
 
-Utku Ozbulak
+Utku Ozbulak - <a href="http://www.github.com/utkuozbulak">utkuozbulak</a>
 
 ## Motivation:
 We wanted to come up with a forward indicatior that Bloomberg doesn not offer right now but might help their business and product range.
@@ -35,7 +35,7 @@ Out many algorithms that are available in Azure Machine Learning Studio, our Lin
 
 Unfortunately, many models we tried on Neural Nets did not converge to the solution which might be an indicator that we need more data.
 
-Below, is the test result of 3 months, overall, we were able to capture trends but we overshoot the trends from time to time. The change(Y Axis) is the **predicted percentage increase or decrease on defense industry(stocks)** and the X xis is time represented in days.
+Below, is the test result of 3 months, overall, we were able to capture trends but we overshoot the trends from time to time. The change(Y Axis) is the **predicted percentage increase or decrease on defense industry(stocks)** and the X axis is time represented in days.
 
 ![currency](https://raw.githubusercontent.com/utkuozbulak/UCL-DSSC-Hackaton/master/PowerBI_Image_Exports/7-defence-index-trend-prediction.png "currency")
 
@@ -48,7 +48,7 @@ The model we used in Azure Studio is like below:
 ![model](https://raw.githubusercontent.com/utkuozbulak/UCL-DSSC-Hackaton/master/Azure_ML/Model.png "model")
 
 
------------------------------
+_______________
 
 
 Azure-ML folder contains the images of model and the datasets.
