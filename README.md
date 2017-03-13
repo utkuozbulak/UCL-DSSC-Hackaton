@@ -18,7 +18,7 @@ We created an index out of defense firms that specialized in the sale of armanen
 ![Stock_Index](https://raw.githubusercontent.com/utkuozbulak/UCL-DSSC-Hackaton/master/PowerBI_Image_Exports/1-defense-stocks-index.png "Stock_Index")
 
 
-We analyzed different window sizes to feed to our machine learning algorithms to predict the momentum of the index and finally decided to use window size of 30. The target(Y) here is the average of this synthetic index of next 30 days, the motive behind that was to predict, on average, what will happen to those stocks in the future. 
+We analyzed different window sizes to feed to our machine learning algorithms to predict the momentum of the index and finally decided to use window size of 30. Each input is a day shifted version of the previous one. The target(Y) here is the average of the synthetic index of next 30 days after the last input, the motive behind that was to predict, on average, what will happen to those stocks in the future. 
 
 In order to capture global political instability, we also used some external datasets such as global refugees per month, oil and gold prices as well as currencies that might be majorly affected from current turmoil.  
 
@@ -31,13 +31,13 @@ In order to capture global political instability, we also used some external dat
 
 ![currency](https://raw.githubusercontent.com/utkuozbulak/UCL-DSSC-Hackaton/master/PowerBI_Image_Exports/6-currency.png "currency")
 
-We found out that from these external features, only gold prices and total refugee count helped us with the prediction of the synthetic index.
+We modeled our data as 30 days window size of the index (average of sum of all defense industry stocks) then we added gold price as an average of past 20 days to smooth out any spikes and global refugee count of that month.
 
-We modeled our data as 30 days window size of the index (average of sum of all defense industry stocks) then we added gold price as an average of past 30 days to smooth out any spikes and global refugee count of that month.
+Out of many models we worked on, we found out that from these external features, only the change in **gold** prices and **total refugee count** helped us increase the prediction accuracy of the synthetic index.
 
-Out of many algorithms that are available in Azure Machine Learning Studio, our Linear Regression with 0.005 regularisation rating gave the best result with ~3% absolute error.
+Of all available regression algorithms that are available in Azure Machine Learning Studio, our Linear Regression with 0.005 regularisation rating gave the best result with ~3% absolute error.
 
-Unfortunately, many models we tried on Neural Nets did not converge to the solution which might be an indicator that we need more data.
+Unfortunately, many models we tried on Neural Nets did not converge to the solution which might be an indicator that we need more data. 
 
 Below, is the test result of 3 months, overall, we were able to capture trends but we overshoot the trends from time to time. The change(Y Axis) is the **predicted percentage increase or decrease on defense industry(stocks) of next 15 days** and the X axis is time represented in days.
 
@@ -65,6 +65,3 @@ _______________
 3. PowerBI_Image_Exports Contains all the images from PowerBI that we used to express the results and our reasoning.
 
 4. Python_src contains the python code that we used in AzureML Studio and ipynb.
-
-
-
