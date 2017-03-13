@@ -31,6 +31,8 @@ In order to capture global political instability, we also used some external dat
 
 ![currency](https://raw.githubusercontent.com/utkuozbulak/UCL-DSSC-Hackaton/master/PowerBI_Image_Exports/6-currency.png "currency")
 
+## Modeling & Execution:
+
 We modeled our data as 30 days window size of the index (average of sum of all defense industry stocks) then we added gold price as an average of past 20 days to smooth out any spikes and global refugee count of that month.
 
 Out of many models we worked on, we found out that from these external features, only the change in **gold** prices and **total refugee count** helped us increase the prediction accuracy of the synthetic index.
@@ -41,8 +43,9 @@ Unfortunately, many models we tried on Neural Nets did not converge to the solut
 
 Below, is the test result of 3 months, overall, we were able to capture trends but we overshoot the trends from time to time. The change(Y Axis) is the **predicted percentage increase or decrease on defense industry(stocks) of next 15 days** and the X axis is time represented in days.
 
-![currency](https://raw.githubusercontent.com/utkuozbulak/UCL-DSSC-Hackaton/master/PowerBI_Image_Exports/7-defence-index-trend-prediction.png "currency")
+## Results:
 
+![currency](https://raw.githubusercontent.com/utkuozbulak/UCL-DSSC-Hackaton/master/PowerBI_Image_Exports/7-defence-index-trend-prediction.png "currency")
 
 The final model we used in Azure Studio is like below, at bottom we have 6 different Neural Nets which we tried to tune heavily but didn't succeed, and on sides, other regression algorithms.
 
@@ -56,7 +59,7 @@ We then visualised the data we used and the prediction with Microsoft Power BI. 
 
 _______________
 
-### Package Info:
+## Package Info:
 
 1. Azure-ML folder contains the images of model and the datasets.
 
