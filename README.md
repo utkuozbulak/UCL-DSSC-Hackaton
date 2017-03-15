@@ -11,7 +11,7 @@ Lukas Weiss - <a href="http://www.github.com/blanche">blanche</a>
 Utku Ozbulak - <a href="http://www.github.com/utkuozbulak">utkuozbulak</a>
 
 ## Motivation:
-We wanted to come up with a forward indicatior that Bloomberg doesn not offer right now but might help their business and product range.
+We wanted to come up with a proof of concept, a forward indicatior that Bloomberg doesn not offer right now but might help their business and product range.
 
 We created an index out of defense firms that specialized in the sale of armanents and munitions and did not have exposure to other markets. Below is the visualisation of few of those companies' stocks, it was obvious that those companies are correlating and if we were to create a synthetic index out of their average it would reflect the trend of those stocks.
 
