@@ -1,4 +1,4 @@
-# UCL-DSSC-Hackaton powered by Microsoft Azure Machine Learning
+# UCL-DSSC-Hackathon powered by Microsoft Azure Machine Learning
 
 ## Team: Hype Train
 ## Ranking: 1st Place in the Competition
